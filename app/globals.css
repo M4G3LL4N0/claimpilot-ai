@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --steel: #94a3b8;
+  --graphite: #0f172a;
+  --cockpit-blue: #38bdf8;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 28%),
+    radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.12), transparent 24%),
+    linear-gradient(180deg, #0b1220 0%, #020617 48%, #020617 100%);
+}
+
+.panel {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 backdrop-blur;
+}
+
+.cockpit-hero {
+  @apply space-y-4 rounded-3xl border border-sky-400/15 bg-slate-950/50 p-8;
+}
+
+.cockpit-kicker {
+  @apply inline-flex rounded-full border border-sky-400/25 bg-sky-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-sky-200;
+}
+
+.field {
+  @apply block space-y-2 text-sm;
+}
+
+.field span {
+  @apply text-slate-200;
+}
+
+.field select,
+.field input,
+.field textarea {
+  @apply w-full rounded-xl border border-white/15 bg-slate-950/80 px-3 py-2.5 text-slate-100 outline-none transition focus:border-sky-400/50;
+}
+
+.chip-grid {
+  @apply flex flex-wrap gap-2;
+}
+
+.chip {
+  @apply rounded-full border border-white/10 px-3 py-1.5 text-xs text-slate-300 transition hover:border-sky-400/30 hover:text-white;
+}
+
+.chip-active {
+  @apply border-sky-400/40 bg-sky-500/10 text-sky-100;
+}
+
+.btn-primary {
+  @apply rounded-xl bg-sky-400 px-4 py-2.5 font-medium text-slate-950 transition hover:bg-sky-300;
+}
+
+.btn-secondary {
+  @apply rounded-xl border border-white/15 px-4 py-2.5 text-slate-100 transition hover:border-sky-400/30 hover:bg-white/5;
+}
+
+.severity {
+  @apply rounded-full px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.16em];
+}
+
+.severity-critical {
+  @apply bg-rose-500/15 text-rose-200;
+}
+
+.severity-moderate {
+  @apply bg-amber-500/15 text-amber-200;
+}
+
+.severity-watch {
+  @apply bg-slate-500/20 text-slate-300;
+}
+
+.policy-stack {
+  @apply space-y-3;
+}
+
+.policy-card {
+  @apply rounded-2xl border border-white/10 bg-slate-950/70 p-4 shadow-lg shadow-black/20;
+}
+
+.policy-active {
+  @apply border-emerald-400/20;
+}
+
+.policy-gap {
+  @apply border-rose-400/25 bg-rose-500/5;
+}
+
+.policy-review {
+  @apply border-amber-400/25 bg-amber-500/5;
+}
+
+.policy-status {
+  @apply rounded-full border border-white/10 px-2 py-1 text-[11px] uppercase tracking-[0.16em] text-slate-300;
+}
+
+.quote-card {
+  @apply rounded-2xl border border-white/10 bg-slate-950/70 p-4;
+}
+
+.quote-card-highlight {
+  @apply border-sky-400/35 bg-sky-500/10;
+}
+
+.timeline {
+  @apply space-y-4;
+}
+
+.timeline-item {
+  @apply relative flex gap-4 pl-6;
+}
+
+.timeline-item::before {
+  content: "";
+  @apply absolute bottom-0 left-[7px] top-5 w-px bg-white/10;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-marker {
+  @apply absolute left-0 top-1 h-4 w-4 rounded-full border border-sky-400/40 bg-slate-950;
+}
+
+.timeline-due .timeline-marker {
+  @apply bg-amber-400;
+}
+
+.timeline-complete .timeline-marker {
+  @apply bg-emerald-400;
+}
+
+.timeline-date {
+  @apply rounded-full border border-white/10 px-2 py-0.5 text-xs text-slate-400;
+}
+
+.health-score-ring {
+  @apply flex h-28 w-28 items-center justify-center rounded-full p-1;
+}
+
+.health-score-core {
+  @apply flex h-full w-full flex-col items-center justify-center rounded-full bg-slate-950;
+}
+
+.check {
+  @apply mt-1 h-3.5 w-3.5 rounded-full border border-white/20;
+}
+
+.check.ready {
+  @apply border-emerald-400 bg-emerald-400/80;
+}
+
+.stat-grid {
+  @apply grid gap-4 md:grid-cols-2 xl:grid-cols-4;
+}
+
+.stat-card {
+  @apply rounded-2xl border border-white/10 bg-slate-950/60 p-5;
+}
