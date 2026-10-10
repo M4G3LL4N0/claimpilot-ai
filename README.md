@@ -1,146 +1,95 @@
-# ClaimPilot AI
+# claimpilot-ai
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/hero-reduced.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/hero-light.svg">
-    <img src="assets/hero/hero-motion.svg" alt="ClaimPilot AI — animated project plate showing capital &rarr; allocate &rarr; mark &rarr; settle. Motion depicts this project's real state transition." width="100%">
-  </picture>
-</p>
+> Policy matching and quote comparison for small brokers. Built in Prisma, Zod. 18 routes (/about, /api/intake, /contact); 1 entry point (index.html). PROTOTYPE. No test suite committed.
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/computational-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/computational-light.svg">
-    <img src="assets/hero/computational-motion.svg" alt="State machine: capital &rarr; allocate &rarr; mark &rarr; settle." width="100%">
-  </picture>
-</p>
+The implementation summary below is intentionally conservative. Claims from NORTHSTAR are not presented as shipped functionality.
 
-AI-native insurance brokerage MVP for SMB policy matching, quote comparison, renewal planning, and broker actioning.
+- [GitHub repository](https://github.com/M4G3LL4N0/claimpilot-ai)
+- [Project site](https://claimpilot-ai-public.vercel.app/)
 
-## Stack
-- Next.js 16 (App Router) + TypeScript
-- Tailwind CSS v4
-- Prisma + SQLite
-- pnpm
+<!-- NOAERTH_IMAGE_SLOT: claimpilot-ai/hero -->
 
-## Routes
-- `/` product overview
-- `/intake` interactive insurance intake demo
-- `/dashboard` renewal calendar dashboard
-- `/dashboard/runs/[id]` run detail
-- `/pricing` SMB insurance pricing
+## What it is
 
-## Commands
-- `pnpm install`
-- `pnpm dev`
-- `pnpm build`
-- `pnpm db:push`
+Policy matching and quote comparison for small brokers. Built in Prisma, Zod. 18 routes (/about, /api/intake, /contact); 1 entry point (index.html). PROTOTYPE. No test suite committed.
 
-<!-- TRILLIONX:presentation:begin -->
+This repository is part of the NOAERTH venture ecosystem. The current public-facing evidence identifies it as a prototype / active development rather than a production-ready system.
 
-### Animated surfaces
+## Capabilities
 
-Generated from this repository's own source tree: every count, route and module below was measured, not written by hand.
+### Available evidence
 
-#### Identity
+- The repository contains the implementation and documentation associated with the project description above.
+- The technology signals currently visible in the local project are listed in the technical notes below.
+- No additional capability is asserted here without a direct implementation reference.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/hero-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/hero-light.svg">
-  <img alt="Identity diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/hero-motion.svg">
-</picture>
+### Experimental or planned
 
-#### Entry points
+Roadmap intent is deliberately not represented as shipped functionality. Review NORTHSTAR and source implementation together before adding future-facing claims.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/terminal-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/terminal-light.svg">
-  <img alt="Entry points diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/terminal-motion.svg">
-</picture>
+<!-- NOAERTH_IMAGE_SLOT: claimpilot-ai/workflow -->
 
-#### Modules
+## How it works
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/architecture-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/architecture-light.svg">
-  <img alt="Modules diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/architecture-motion.svg">
-</picture>
+The current evidence supports a repository-level application or tool workflow, but does not provide enough verified detail in the Part 1 record to publish a component-level architecture diagram. The architecture slot is reserved for a deterministic diagram after the source flow is reviewed.
 
-#### Routes
+<!-- NOAERTH_IMAGE_SLOT: claimpilot-ai/architecture -->
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/data_flow-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/data_flow-light.svg">
-  <img alt="Routes diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/data_flow-motion.svg">
-</picture>
+## Quick start
 
-#### Primitives
+### Prerequisites
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/state_machine-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/state_machine-light.svg">
-  <img alt="Primitives diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/state_machine-motion.svg">
-</picture>
+- A runtime suitable for `Node.js`.
+- A clean checkout of this repository.
 
-#### Composition
+### Install
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/component_map-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/component_map-light.svg">
-  <img alt="Composition diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/component_map-motion.svg">
-</picture>
+```sh
+pnpm install
+```
 
-#### Build and tests
+### Run locally
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/build-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/build-light.svg">
-  <img alt="Build and tests diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/build-motion.svg">
-</picture>
+```sh
+pnpm run dev
+```
 
-#### Workflow
+### Build
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/workflow-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/workflow-light.svg">
-  <img alt="Workflow diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/workflow-motion.svg">
-</picture>
+```sh
+pnpm run build
+```
 
-#### Domain
+Commands are included only when they were detected in the repository manifest; verify environment-specific requirements before deployment.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/domain-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/domain-light.svg">
-  <img alt="Domain diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/domain-motion.svg">
-</picture>
+## Technical notes
 
-#### Identity object
+- **Primary language:** JavaScript/TypeScript
+- **Runtime:** Node.js
+- **Package manager:** pnpm
+- **Framework and integration signals:** Go, Next.js, Prisma, Rust, Tailwind
+- **Entry-point signals:** package.json
+- **Test evidence:** TEST_PLAN.md
+- **Repository topics:** `react`, `typescript`, `app`, `components`, `index`, `next-js`, `policy`, `prisma`
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/footer-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/footer-light.svg">
-  <img alt="Identity object diagram for claimpilot-ai" src="https://raw.githubusercontent.com/M4G3LL4N0/claimpilot-ai/main/.github-art/surfaces/footer-motion.svg">
-</picture>
+## Status and roadmap
 
-<!-- TRILLIONX:presentation:end -->
+**Current status:** Prototype / active development.
 
-<!-- TRILLIONX:evidence:begin -->
+**Current:** The repository and its documented implementation are available for inspection.
 
-## What is measurable here
+**Next:** Reconcile the README, source behavior, and safe public product language before adding deeper examples or diagrams.
 
-Generated by `.github-art` from the source tree at publish time.
+**Future:** Product direction is maintained separately and must not be read as a shipped feature list.
 
-| Signal | Value |
-| --- | --- |
-| HTTP routes | 18 |
-| Entry points | 1 |
-| Module roots | 4 |
-| Test files | 0 |
-| CI workflows | 0 |
-| Distinctive stack | Prisma, Zod |
-| Status | PROTOTYPE |
-| Evidence confidence | E3 |
-| Animated surfaces | 10 |
+## Contributing and license
 
-<!-- TRILLIONX:evidence:end -->
+Follow the repository's existing contribution and licensing files where present. This README does not invent an open-source license or contribution policy.
+
+## Visual documentation
+
+Image slots are intentionally comments until authentic screenshots, deterministic diagrams, or approved conceptual visuals exist. No absent image file is referenced.
+
+## NOAERTH
+
+[NOAERTH](https://www.noaerth.com) is the venture ecosystem associated with this project.
